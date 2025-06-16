@@ -34,3 +34,33 @@ Please complete Part 1–2 as described in the [Google Slides](https://docs.goog
     year      = {2024}
 }
 ```
+
+***
+
+# Report
+
+## Part 1 Video
+
+Please check part1/ directory.
+
+## Part 2
+
+**PSNR**
+
+| Adjustment | PSNR (dB) |
+| ---------- | ---- |
+| grid_v_damping_scale 0.9999 -> 1.9999| 20.01 |
+| substep_dt 1e-4 -> 6e-5 | 22.61 |
+
+**Observation**
+
+1. Increasing grid_v_damping_scale make the tree accelerate more than before.
+2. Decreasing substep_dt
+
+**Video Link**
+
+**Bonus**
+
+Design a machine learning model that input a video of a specific object, predict the parameters of the object. We can use some known object as ground truth to train the model.
+
+We can also use some well defined physics simulater parameters as model input, so it is easier to learn the relation between physics parameters and model parameters.
