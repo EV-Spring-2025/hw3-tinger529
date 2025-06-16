@@ -47,12 +47,12 @@ Please check part1/ directory.
 
 **PSNR**
 
-| Adjustment | PSNR (dB) |
-| ---------- | ---- |
-| grid_v_damping_scale 0.9999 -> 1.9999| 20.01 |
-| substep_dt 1e-4 -> 6e-5 | 22.61 |
-| n_grid 100 -> 10 | 21.73 |
-| softening 0.1 -> 100 | 76.51 |
+| Adjustment | jelly PSNR (dB) | plasticine PSNR (dB) |
+| ---------- | ---- | ---- |
+| grid_v_damping_scale 0.9999 -> 1.9999 | 20.01 | 20.01 |
+| substep_dt 1e-4 -> 6e-5 | 22.61 | 22.61 | 
+| n_grid 100 -> 10 | 21.73 | 21.73 |
+| softening 0.1 -> 100 | 76.51 | 76.03 |
 
 **Observation**
 
@@ -60,9 +60,24 @@ Please check part1/ directory.
 2. Lowering substep_dt improves simulation stability and accuracy, though visual changes are minor.
 3. Decreasing n_grid coarsens the grid, which reduces lateral motion. In this case, the tree stopped swaying side to side, likely due to reduced spatial resolution. 
 4. Although I've tried various settings, the resulting videos seem almost the same to the original one. Increasing softening value should make the tree looks stiff, but it is not very effective in this case.
+5. The values of PSNR of these two materials are almost the same, maybe due to the short simulation time and insufficient perturbation.
 
 **Video Link**
+
 Please check part2/ directory.
+Also available on YouTube:
+
+(Jelly)
+- grid_v_damping_scale 0.9999 -> 1.9999: https://youtube.com/shorts/KcctYyVvcbg?feature=share
+- substep_dt 1e-4 -> 6e-5: https://youtube.com/shorts/zWuXz-ALsX0?feature=share
+- n_grid 100 -> 10: https://youtube.com/shorts/RYa81Ld_st4?feature=share
+- softening 0.1 -> 100: https://youtube.com/shorts/JPXUAnDHG8s?feature=share
+
+(Plasticine)
+- grid_v_damping_scale 0.9999 -> 1.9999: https://youtube.com/shorts/-jP5xEprXuE?feature=share
+- substep_dt 1e-4 -> 6e-5: https://youtube.com/shorts/GWGf6DgAzs0?feature=share
+- n_grid 100 -> 10: https://youtube.com/shorts/XWvP-CbVSKc?feature=share
+- softening 0.1 -> 100: https://youtube.com/shorts/LtvzLYB9cDU?feature=share
 
 **Bonus**
 

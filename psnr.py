@@ -5,7 +5,7 @@ from skimage.metrics import peak_signal_noise_ratio as compute_psnr
 
 # Set your paths
 generated_dir = "PhysGaussian/output"
-reference_dir = "PhysGaussian/jelly_gt"  # <-- replace with actual path
+reference_dir = "PhysGaussian/plastic_gt"  # <-- replace with actual path
 
 frame_range = range(124)  # total frames rendered
 
